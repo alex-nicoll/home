@@ -12,7 +12,6 @@ Plug 'ianks/vim-tsx'
 Plug 'Shougo/vimproc'
 Plug 'Quramy/tsuquyomi'
 
-Plug 'arcticicestudio/nord-vim'
 Plug 'altercation/vim-colors-solarized'
 
 Plug 'andrewmacp/llvm.vim'
