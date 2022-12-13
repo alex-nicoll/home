@@ -1,0 +1,8 @@
+# Ignore everything...
+*
+
+# ...except for these files.
+!.bashrc
+!.gitconfig
+!.gitignore
+!.vimrc
