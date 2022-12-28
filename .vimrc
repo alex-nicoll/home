@@ -1,24 +1,12 @@
 " Welcome to my .vimrc. To have Vim reevaluate this file, type ":source %".
-"
+
 " declare plugins
 call plug#begin('~/.vim/plugged')
-" NOTE: Use 'for' to load plugin only for given filetypes. List all filetypes
-" known to Vim via :setfiletype [space] CTRL-d. (command line completion)
-" e.g. Plug 'leafgarland/typescript-vim' { 'for': ['typescript', 'tsx'] }
-"
-Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
-" vimproc is required by tsuquyomi in vim version < 8
-Plug 'Shougo/vimproc'
-Plug 'Quramy/tsuquyomi'
-
-Plug 'altercation/vim-colors-solarized'
-
-Plug 'andrewmacp/llvm.vim'
 Plug 'python-mode/python-mode'
 ", { 'branch': 'develop' }
-" ^^^ dev branch is recommended, but broken.
+" ^^^ develop branch is recommended, but may be broken.
 Plug 'vim-python/python-syntax'
+Plug 'altercation/vim-colors-solarized'
 Plug 'dominikduda/vim_current_word'
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -58,11 +46,11 @@ let g:pymode_syntax = 0
 let g:python_highlight_all = 1
 let g:python_highlight_operators = 0
 
-" syntax highlighting (why didn't they name this command "set syntax"?)
+" syntax highlighting
 syntax enable
 
 " Set background before changing the colorscheme or highlighting.
-" Vim does wonky stuff when this option changes, like "reloading" the
+" Vim does unexpected things when this option changes, like reloading the
 " colorscheme and modifying highlight groups. See :h 'background'.
 set background=dark
 
