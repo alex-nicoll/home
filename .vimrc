@@ -1,15 +1,11 @@
 " Welcome to my .vimrc. To have Vim reevaluate this file, type ":source %".
 
-" declare plugins
+" Declare plugins.
 call plug#begin('~/.vim/plugged')
-Plug 'python-mode/python-mode'
-", { 'branch': 'develop' }
-" ^^^ develop branch is recommended, but may be broken.
 Plug 'vim-python/python-syntax'
 Plug 'altercation/vim-colors-solarized'
-Plug 'dominikduda/vim_current_word'
 Plug 'airblade/vim-gitgutter'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'tag': 'v1.28' }
 Plug 'tpope/vim-surround'
 call plug#end()
 
@@ -38,11 +34,7 @@ set cursorline
 " Makes it easier to use / and ? as general purpose navigation commands.
 set incsearch
 
-" configure python-mode
-" Disable syntax highlighting in favor of vim-python/python-syntax.
-let g:pymode_syntax = 0
-
-" configure python-syntax
+" Configure python-syntax.
 let g:python_highlight_all = 1
 let g:python_highlight_operators = 0
 
@@ -61,7 +53,3 @@ hi clear SignColumn
 
 " Highlight DiffText same as DiffChange to make diffs more readable.
 hi! link DiffText DiffChange
-
-" configure vim_current_word
-let g:vim_current_word#highlight_delay = 400
-let g:vim_current_word#highlight_current_word = 0
