@@ -6,6 +6,7 @@ Plug 'vim-python/python-syntax'
 Plug 'altercation/vim-colors-solarized'
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', { 'tag': 'v1.28' }
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-surround'
 call plug#end()
 
